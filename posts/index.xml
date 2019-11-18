@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 超超的CodingLife</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on 超超的CodingLife</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 17 Nov 2019 23:40:21 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自我介绍</title>
+      <link>http://example.org/posts/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Sun, 17 Nov 2019 23:40:21 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</guid>
+      <description>大家好 大家好 大家好，我叫庞文超，毕业于河南理工大学，现在转行前端。对于前端这门工作我还是非常喜爱的。每当自己写完代码的时候自己觉得非常有成就感。</description>
+    </item>
+    
+  </channel>
+</rss>
