@@ -1,4 +1,4 @@
-baseURL = "http://wenchaopang.vip/"
+baseURL = "https://wenchaopang.vip/"
 languageCode = "zh-Hans"
 title = "超超的CodingLife"
 theme = "ananke"
