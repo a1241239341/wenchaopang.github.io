@@ -163,6 +163,48 @@ a 的 href 的取值  网址  https://google.com http://google.com //google.com 
 
         </div>
       
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+    <h1 class="f3 near-black">
+      <a href="http://wenchaopang.vip/post/4.css-%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      CSS 入门笔记-盒模型 盒模型是什么 作为前端开发的我们，盒模型对于大家来说是非常熟悉的了。这里引用 MDN 官网的解释：
+ 当你的浏览器展现一个元素时，这个元素会占据一定的空间。这个空间有四部分组成。中间是元素呈现内容的区域。这个区域的外面是内边距，在外面是边框，外边距将该元素与其他元素分开。内边距，边框和外边距在元素的上、右、下、左都可以有不同的大小。所有这些大小值都可以为 0。
+ 官方的语言比较难懂，我们在 chrome 的控制台的截图说明： 最外面橙色的就是外边距区域（margin area）,往里黄色的是边框区域（border area），再往里的绿色的内边距区域（padding area），最里面绿色的就是内容区域（content area）。
+两种盒模型 content-box content-box 内容盒-内容就是盒子的边界 公式：content-box width=内容宽度
+border-box border-box 边框盒-边框才是盒子的边界 公式：border-box width=内容宽度+padding+border 最佳实践 为了布局方便，老师建议我们将所有元素都设置为box-sizing:border-box，可以用下面的代码：
+html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }  这种方法称为最佳实践。
+以上内容借鉴于张鑫旭博客，MDN 官网，饥人谷方方老师 ppt。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+    <h1 class="f3 near-black">
+      <a href="http://wenchaopang.vip/post/5.css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      CSS 知识总结 ps：时间过得好快，转眼间 css 就讲完了，自己就这样懵懵懂懂的呆滞着。有点懵逼。毕竟一边工作一边学习。进度难免跟不上，再操蛋点，公司又有时加班。课程很紧。要努力了，早日摆脱这苦逼的生活。接下来就好好总结下学过的知识吧。
+浏览器渲染原理 步骤：
+ 根据 HTML 构建 HTML 树(DOM) 根据 CSS 构建 CSS 树(CSS OM) 将两棵树合并为一颗渲染树(render tree) Layout 布局(文档型，盒模型，计算大小和位置) Paint 绘制(把边框颜色，文字颜色，阴影等画出来) composite 合成(根据层叠关系展示画面)  CSS 动画的两种做法 transition 过渡 作用：补充中间帧 语法：transition：属性名，时长，过渡方式，延迟
+transition: margin-right 4s; transition: margin-right 4s 1s; transition: margin-right 4s ease-in-out; transition: margin-right 4s ease-in-out 1s; transition: margin-right 4s, color 1s; transition: all 0.5s ease-out; transition: inherit; transition: initial; transition: unset;  注意：并不是所有属性都能过渡。
+animation 过渡 作用：声明关键帧，添加动画。 @keyframes 完整语法：1.
+    </div>
+  </div>
+
+        </div>
+      
     </aside>
     
 

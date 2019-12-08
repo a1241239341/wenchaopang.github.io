@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>超超的CodingLife </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="CSS 入门笔记-盒模型 盒模型是什么 作为前端开发的我们，盒模型对于大家来说是非常熟悉的了。这里引用 MDN 官网的解释：
+ 当你的浏览器展现一个元素时，这个元素会占据一定的空间。这个空间有四部分组成。中间是元素呈现内容的区域。这个区域的外面是内边距，在外面是边框，外边距将该元素与其他元素分开。内边距，边框和外边距在元素的上、右、下、左都可以有不同的大小。所有这些大小值都可以为 0。
+ 官方的语言比较难懂，我们在 chrome 的控制台的截图说明： 最外面橙色的就是外边距区域（margin area）,往里黄色的是边框区域（border area），再往里的绿色的内边距区域（padding area），最里面绿色的就是内容区域（content area）。
+两种盒模型 content-box content-box 内容盒-内容就是盒子的边界 公式：content-box width=内容宽度
+border-box border-box 边框盒-边框才是盒子的边界 公式：border-box width=内容宽度&#43;padding&#43;border 最佳实践 为了布局方便，老师建议我们将所有元素都设置为box-sizing:border-box，可以用下面的代码：
+html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }  这种方法称为最佳实践。
+以上内容借鉴于张鑫旭博客，MDN 官网，饥人谷方方老师 ppt。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://wenchaopang.vip/post/4.css-%E7%9B%92%E6%A8%A1%E5%9E%8B/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="CSS 入门笔记-盒模型 盒模型是什么 作为前端开发的我们，盒模型对于大家来说是非常熟悉的了。这里引用 MDN 官网的解释：
+ 当你的浏览器展现一个元素时，这个元素会占据一定的空间。这个空间有四部分组成。中间是元素呈现内容的区域。这个区域的外面是内边距，在外面是边框，外边距将该元素与其他元素分开。内边距，边框和外边距在元素的上、右、下、左都可以有不同的大小。所有这些大小值都可以为 0。
+ 官方的语言比较难懂，我们在 chrome 的控制台的截图说明： 最外面橙色的就是外边距区域（margin area）,往里黄色的是边框区域（border area），再往里的绿色的内边距区域（padding area），最里面绿色的就是内容区域（content area）。
+两种盒模型 content-box content-box 内容盒-内容就是盒子的边界 公式：content-box width=内容宽度
+border-box border-box 边框盒-边框才是盒子的边界 公式：border-box width=内容宽度&#43;padding&#43;border 最佳实践 为了布局方便，老师建议我们将所有元素都设置为box-sizing:border-box，可以用下面的代码：
+html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }  这种方法称为最佳实践。
+以上内容借鉴于张鑫旭博客，MDN 官网，饥人谷方方老师 ppt。">
+
+
+
+<meta itemprop="wordCount" content="45">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="CSS 入门笔记-盒模型 盒模型是什么 作为前端开发的我们，盒模型对于大家来说是非常熟悉的了。这里引用 MDN 官网的解释：
+ 当你的浏览器展现一个元素时，这个元素会占据一定的空间。这个空间有四部分组成。中间是元素呈现内容的区域。这个区域的外面是内边距，在外面是边框，外边距将该元素与其他元素分开。内边距，边框和外边距在元素的上、右、下、左都可以有不同的大小。所有这些大小值都可以为 0。
+ 官方的语言比较难懂，我们在 chrome 的控制台的截图说明： 最外面橙色的就是外边距区域（margin area）,往里黄色的是边框区域（border area），再往里的绿色的内边距区域（padding area），最里面绿色的就是内容区域（content area）。
+两种盒模型 content-box content-box 内容盒-内容就是盒子的边界 公式：content-box width=内容宽度
+border-box border-box 边框盒-边框才是盒子的边界 公式：border-box width=内容宽度&#43;padding&#43;border 最佳实践 为了布局方便，老师建议我们将所有元素都设置为box-sizing:border-box，可以用下面的代码：
+html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }  这种方法称为最佳实践。
+以上内容借鉴于张鑫旭博客，MDN 官网，饥人谷方方老师 ppt。"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://wenchaopang.vip/" class="f3 fw2 hover-white no-underline white-90 dib">
+      超超的CodingLife
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1"></h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="css-入门笔记-盒模型">CSS 入门笔记-盒模型</h1>
+
+<h2 id="盒模型是什么">盒模型是什么</h2>
+
+<p>作为前端开发的我们，盒模型对于大家来说是非常熟悉的了。这里引用 MDN 官网的解释：</p>
+
+<blockquote>
+<p>当你的浏览器展现一个元素时，这个元素会占据一定的空间。这个空间有四部分组成。中间是元素呈现内容的区域。这个区域的外面是内边距，在外面是边框，外边距将该元素与其他元素分开。内边距，边框和外边距在元素的上、右、下、左都可以有不同的大小。所有这些大小值都可以为 0。</p>
+</blockquote>
+
+<p><img src="../../images4.css盒模型盒模型.png" alt="盒模型" />
+官方的语言比较难懂，我们在 chrome 的控制台的截图说明：
+最外面橙色的就是外边距区域（<code>margin area</code>）,往里黄色的是边框区域（<code>border area</code>），再往里的绿色的内边距区域（<code>padding area</code>），最里面绿色的就是内容区域（<code>content area</code>）。</p>
+
+<h2 id="两种盒模型">两种盒模型</h2>
+
+<h3 id="content-box">content-box</h3>
+
+<p>content-box 内容盒-内容就是盒子的边界
+公式：content-box width=内容宽度</p>
+
+<p><img src="../../images4.css盒模型content-box.PNG" alt="内容盒" /></p>
+
+<h3 id="border-box">border-box</h3>
+
+<p>border-box 边框盒-边框才是盒子的边界
+公式：border-box width=内容宽度+padding+border
+<img src="../../images4.css盒模型border-box.PNG" alt="边框盒" /></p>
+
+<h2 id="最佳实践">最佳实践</h2>
+
+<p>为了布局方便，老师建议我们将所有元素都设置为<code>box-sizing:border-box</code>，可以用下面的代码：</p>
+
+<pre><code class="language-css">html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+</code></pre>
+
+<p>这种方法称为最佳实践。</p>
+
+<p>以上内容借鉴于张鑫旭博客，MDN 官网，饥人谷方方老师 ppt。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://wenchaopang.vip/" >
+    &copy; 2019 超超的CodingLife
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
